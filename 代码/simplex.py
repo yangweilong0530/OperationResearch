@@ -44,9 +44,12 @@ def simplex(c, A, b):  # 定义单纯形法函数，输入参数为目标函数�
     return solution
 
 # 测试代码
-c = np.array([-3, 2], dtype=float)
-A = np.array([[2, 1], [1, 3]], dtype=float)
-b = np.array([18, 15], dtype=float)
+c = np.array([25,20,18], dtype=float)
+A = np.array([[5,0,0],
+              [0,2,0],
+              [0,0,2],
+              [1,2,0]], dtype=float)
+b = np.array([1,1,1,1], dtype=float)
 
 try:
     solution = simplex(c, A, b)
